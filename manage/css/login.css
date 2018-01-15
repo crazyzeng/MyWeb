@@ -1,0 +1,26 @@
+#login_div_outer{
+    margin-top: 6em;
+}
+#login_div{
+    margin: 0 auto;
+    width: 310px;
+    height: 300px;;
+}
+#login_div input{
+    margin-top: 1.5em;
+    width: 100%;
+    padding: 0.8em;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    /*-webkit-appearance: none;*/
+}
+#login,#register{
+    background: none;
+}
+#login:hover,#register:hover{
+    border: 1px solid blue;
+}
+#login_div span{
+    font-size: 1.2em;
+}

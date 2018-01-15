@@ -1,0 +1,158 @@
+body{
+	background-color: #eee;
+	color:#333;
+	font:14px "microsoft yahei",Arial;
+/*	min-width: 1280px;*/
+	overflow-x: hidden;
+}
+/*bootstrap 容器样式设置*/
+.container{
+	padding: 0;
+	margin: 0 auto;
+}
+/*top*/
+#top_message{
+	height: 30px!important;
+/*	border: none;*/
+}
+#header{
+	width: 100%;
+    line-height: 30px;
+    font-size: 12px;
+    margin:0 auto;
+    background: #aaa;
+    border: none;
+    overflow: hidden;
+}
+#header_lf{
+	float: left;
+	padding-left: 20px;
+	margin: 0;
+}
+#header_rt{
+	float: right;
+	padding-right: 20px;
+	margin: 0;
+}
+#header ul li{
+	float: left;
+	margin-left: 20px;
+}
+#header ul li a:hover{
+color: #e4393c;
+text-decoration: underline;
+}
+/*nav*/
+#navbar{
+    background-color: #333;
+    border: none;
+    height: 50px;
+}
+
+#logo,#nav_header li a{
+	color: white;
+	font-size: 18px;
+	text-align: center;
+}
+#nav_header li a:hover{
+	color: black;
+	background: yellow;
+	text-decoration-style: none;
+}
+#logo:hover{
+	cursor: pointer;
+}
+#login_user:hover{
+	cursor: pointer;
+}
+#changeStatus:hover{
+	cursor: pointer;
+}
+/*section栅格部分含样式重构*/
+.imgList{
+	margin-top: 20px;
+	text-align: center;
+}
+.imgList div{
+	display: inline-block;
+}
+.imgList img{
+	min-height: 200px;
+	display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.imgList img:hover{
+	cursor: pointer;
+}
+section .row div{
+	height: 100%;
+	padding: 15px 10px!important;
+	margin-bottom: 25px;
+	padding: 0;
+
+}
+section .row div a{
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	height: 100%;
+
+}
+section .row div a:hover{
+	text-decoration: none;
+	color: green;
+}
+section .row div a p{
+	border-top: 1px solid #eee;
+	padding-top: 10px;
+	background-color: #fff;
+}
+/*收缩栏与右页边保持一定间距*/
+.navbar-toggle{
+	right: 10px;
+}
+/*部分尺寸存在高度设置问题*/
+@media (min-width: 992px){
+	.col-md-4 {
+		height: 215px!important;
+	}
+	/*在大屏中设置导航条的居中*/
+
+}
+@media (min-width: 768px){
+	.col-sm-6 {
+		height: 244.44px!important;
+	}
+	.navbar-header{
+		float: none;
+		display: inline-block;
+	}
+	.navbar-collapse.collapse{
+		display: inline-block!important;
+	}
+}
+@media (min-width: 280px){
+	.container>.navbar-header{
+		margin-left: 0!important;
+	}
+	#navbar .container{
+		width: 100%;
+	}
+
+}
+/*footer*/
+footer .row a:hover{
+	text-decoration: none;
+}
+footer .copyright a{
+	display: inline;
+}
+footer .copyright p{
+	display: inline-block;
+}
+footer .container .row .col-lg-8{
+	width: 100%;
+	max-height: 50px;
+}

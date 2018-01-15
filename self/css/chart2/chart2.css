@@ -1,0 +1,16 @@
+#top_h1{
+	width: 100%;
+	text-align: center;
+}
+#charts{
+	width: 100%;
+	min-width: 1280px;
+	text-align: center;
+	margin-top: 60px;
+}
+#July,#Aug,#Sept,#Nov{
+	/*margin:0 auto;*/
+	width: 600px;
+	height:400px;
+	display: inline-block;
+}

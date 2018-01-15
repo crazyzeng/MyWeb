@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>register</title>
+		<link rel="stylesheet" href="../css/lib/base.css">
+		<link rel="stylesheet" href="../css/register/register.css">
+	</head>
+	<body>
+		<div id="register_div_outer">
+			<div id="register_div">
+				<span>用户注册</span>
+				<ul>
+					<li>
+						<input id="user" type="text" name="username" placeholder="帐号"/><br/>
+					</li>
+					<li>
+						<input id="pwd" type="password" name="password" placeholder="密码" autocomplete="new-password"/><br/>
+					</li>
+					<li>
+						<input id="Cpwd" type="password" name="confirm" placeholder="确认密码" autocomplete="new-password"/><br/>
+					</li>
+					<li><!--验证码模块-->
+						<input id="inputCode" type="text" name="" value="" placeholder="验证码" autocomplete="new-password">
+						<span id="checkCode" onclick="createCode()"></span>
+						<a href="javascript:void(0)" onclick="createCode()">看不清换一张</a>
+					</li>
+					<li>
+						<input type="submit" name="register_login" id="register_login" value="注册并登录">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="../js/lib/jquery-1.11.0.js"></script>
+	<script src="../js/lib/jquery.cookies.js"></script>
+	<script src="../js/lib/fun_ajax.js"></script>
+	<script src="../js/lib/login_register.js"></script>
+	<script src="../js/lib/jquery.base64.js"></script>
+	<script src="../js/app/register.js"></script>
+
+
+	<script type="text/javascript">
+
+	</script>
+</html>

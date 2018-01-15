@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>index.html</title>
+		<link rel="stylesheet" type="text/css" href="../css/lib/base.css">
+        <link rel="stylesheet" type="text/css" href="../css/index/index.css">
+<!--         <link rel="stylesheet" type="text/css" href="../css/index/bootstrap.min.css">
+ -->	</head>
+	<body style="height: 900px">
+        <!-- <div class="container"> -->
+        <div id="header">
+            <ul id="header_lf">
+                <li>
+                    <p id="login_user"></p>
+                </li>
+                <li>
+                    <p id="changeStatus" onclick="changeStatus()"></p>
+                </li>
+                <li id="index_register">
+                    <!--如果已登录，则显示登录账号，不显示登录注册按钮，显示注销按钮-->
+                    <a href="register.html">Register</a>
+                </li>
+                <li>
+                    <a href="myAccount.html">MyAccount</a>
+                </li>
+            </ul>
+            <ul id="header_rt">
+                <li>
+                    <a href="AboutMe.html">AboutMe</a>
+                </li>
+            </ul>
+        </div>
+        <!-- </div> -->
+        <div id="nav">
+            <ul id="nav_header">
+                <li id="logo">
+                    <p>Logo</p></li>
+                <li>
+                    <a href="#">Index</a>
+                </li>
+                <li>
+                    <a href="chart1.html" target="_blank">HC&BST</a>
+                </li>
+                <li>
+                    <a href="chart2.html" target="_blank">EC&DT</a>
+                </li>
+                <li>
+                    <a href="chart3.html" target="_blank">D3/CT&LG</a>
+                </li>
+                <li>
+                    <a href="http://localhost/ShunCai_Vue-master/index.html" target="_blank">Vue</a>
+                </li>
+                <li>
+                    <a href="http://localhost/ShunCai_R_dist-master/index.html" target="_blank">VueD</a>
+                </li>
+                <li>
+                    <a href="http://blog.csdn.net/aeoliancrazy" target="_blank">MyCSDN</a>
+                </li>
+                <li>
+                    <a href="Wecheat.html" target="_blank">Wecheat</a>
+                </li>
+                <li id="downLoad">
+                    <a onclick="toDownload()">DownLoad</a>
+                    <!--download设置登录后下载，没有的话提示登录，并跳转登录页面-->
+                    <!--既然引用了bootstrap，那么可以直接使用里面的dialog模块--><!--maybe-->
+                </li>
+            </ul>            
+        </div>
+
+        <div id="rt_fixed">
+            <ul>
+                <li>
+                     <a href="JavaScript:void(0)" style="position: relative;">
+                        <img src="../imgs/index/l04.png" >
+                     </a>
+                     <div>2864xxxxx</div>
+                </li>
+                <li>
+                     <a href="JavaScript:void(0)" style="position: relative;">
+                        <img src="../imgs/index/l05.png" >
+                     </a>
+                     <div>187xxxxxxxx</div>
+                </li>
+                <li>
+                     <a href="JavaScript:void(0)"  id="goTop" style="position: relative;" onclick="goTop()">
+                        <img src="../imgs/index/l06.png" >
+                     </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="main">
+            <div class="imgList">
+                <div>
+                    <img src="../imgs/1.jpg">
+                </div>
+                <div>
+                     <img src="../imgs/2.jpg">
+                </div>
+                 <div>
+                    <img src="../imgs/3.jpg">
+                </div>
+                <div>
+                     <img src="../imgs/4.jpg">
+                </div>
+            </div>
+            <div class="imgList">
+                <div>
+                    <img src="../imgs/1.jpg">
+                </div>
+                <div>
+                     <img src="../imgs/2.jpg">
+                </div>
+                 <div>
+                    <img src="../imgs/3.jpg">
+                </div>
+                <div>
+                     <img src="../imgs/4.jpg">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+ 		<!-- <script src="../js/lib/jquery-1.11.0.js"></script> -->
+         <script src="../js/lib/require.js" data-main="../js/lib/main"></script>
+<!-- 		<script src="../js/lib/fun_ajax.js"></script>
+        <script src="../js/lib/jquery.cookies.js"></script>
+		
+		<script src="../js/app/index.js"></script> -->
+		<script type="text/javascript">
+        
+
+
+        </script>
+
+
+	</body>
+</html>

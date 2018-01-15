@@ -1,0 +1,145 @@
+/*顶部蓝条*/
+.nav_top{
+    background-color: #317DD3;
+    width: 100%;
+    line-height: 4em;
+    color: #FFF;
+    font-family: '微软雅黑';
+    font-weight: 800;
+}
+.nav_top .logo{
+    margin-left: 1em;
+    font-size: 1.5em;
+}
+.nav_top .login_status{
+    position: absolute;
+    right: 30px;
+}
+.nav_top .login_status:hover{
+    cursor: pointer;
+}
+/*main*/
+.main{
+    width: 100%;
+    height: 100%;
+}
+/*左边栏*/
+.nav_left{
+    max-width: 181px;
+    min-width: 178px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+.nav_left ul{
+    padding-top: 1em;
+    border-right: 1px solid #d3d8e2;
+    height: 100%;
+}
+.nav_left ul li{
+    width: 100%;
+    display: inline-flex;
+}
+.nav_left ul li i {
+    float: left;
+    margin:1px 5px 0 24px
+}
+.nav_left ul li a{
+    font-size: 16px;
+    color: #333;
+    width: 100%;
+    line-height: 30px;
+    display: block;
+}
+.nav_left ul li a:hover{
+    color: #000;
+    cursor: pointer;
+    /*font-weight: bold ;*/
+}
+.active{
+    background-color: #d3d8e2;
+}
+/***********右边模块***************/
+#managePage{
+    position: absolute;
+    left: 181px;
+    height: 100%;
+}
+.managePage_childen{
+    position: relative;
+    padding-left:  20px;
+    height: 100%;
+}
+.page_title{
+	display: block;
+	font-family: '微软雅黑';
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+    line-height: 33px;
+}
+/*用户*/
+#users{
+    display: inline-block;
+    width: 100%;
+}
+#users li:hover{
+    cursor: default;
+}
+.is_show{
+    background: skyblue;
+}
+#tips_1{
+    font-size: 12px;
+    color: red;
+}
+#users_title{
+    display: block;
+}
+/*添加用户模块*/
+#add_users{
+    display: none;
+}
+.add_users_outer{
+    position: absolute;
+    left: 260px;
+    line-height: 42px;
+    height: 42px;
+    display: inline-block;
+    top:50px;
+}
+.users_exist{
+    border: 1px dotted #aaa;
+    min-width: 150px;
+    max-height: 195px;
+    min-height: 95px;
+    overflow-y: auto;
+    overflow-x: auto;
+    position: absolute;
+    top: 50px;
+}
+.userManage i{
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background: url("../img/icon_manage.png") 3px 4px no-repeat;
+}
+.messageManage i{
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background: url("../img/icon_manage.png") 3px -204px no-repeat
+}
+.dataEnter i{
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background: url("../img/icon_manage.png") -27px 5px no-repeat
+}
+.otherManage i{
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background: url("../img/icon_manage.png") 3px -276px no-repeat
+}
+

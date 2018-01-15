@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<!-- 	<link rel="stylesheet" type="text/css" href="../css/lib/base.css">
+ -->	<link rel="stylesheet" type="text/css" href="../css/downLoad/downLoad.css">
+ 		<script src="../js/lib/jquery-1.11.0.js"></script>
+ 		<script src="../js/lib/jquery.cookies.js"></script>
+ 		<script type="text/javascript">
+		$(function(){
+			var name = $.cookie('username');
+				if(!name||name==undefined){
+					alert("请登录后下载");
+					//swindow.location.href="login.html"
+					window.location.href="login.html";
+			}
+		})
+		</script>
+	<title>downLoad</title>
+</head>
+<body>
+	<div>
+		Here is downLoad
+	</div>
+	<div>
+		<ul>
+			<li>
+				<a href="../../downLoad/2017年终述职报告.pptx">2017年终述职报告.pptx</a>
+			</li>
+			<li>
+				<a href="../../downLoad/2017年终述职报告.pptx">2017年年终述职报告.doc</a>
+			</li>
+			<li>
+				<a href="../../downLoad/ShunCai_Vue-master.zip">Vue源码.rar</a>
+			</li>
+			<li>
+				<a href="../../downLoad/ShunCai_R_dist-master.zip">Vue_dist文件.rar</a>
+			</li>
+			<li>
+				<a href="../../downLoad/2017年终述职报告.pptx">本站源码.rar</a>
+			</li>
+			<li>
+				<a href="../../downLoad/2017年终述职报告.pptx">本站源码Vue.rar</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

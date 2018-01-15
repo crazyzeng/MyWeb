@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+        <div id="userManage" class="managePage_childen">
+        	<span class="page_title">用户管理</span>
+            <div class="add_users_outer">
+                <input type="button" value="添加用户" onclick="show_add()">
+                <input type="button" value="删除" onclick="del()">
+                <input type="button" value="密码重置" onclick="reset()"><br/>
+                <input type="checkbox" id="noRegister" onclick="noRegister()">开启禁止注册</input><br/>
+                <input type="checkbox" id="noLogin" onclick="noLogin()">开启禁止登录</input>
+                <div id="add_users">
+                    <span>帐号：</span><input id="user" type="text" name="username"><br/>
+                    <span>密码：</span><input id="pwd" type="password" name="password" autocomplete="new-password"><!--<span id="tips_1">*只有添加用户的时候密码项必填*</span>-->
+                    <!--<span>序号：</span><input id="order" type="text" name="order"/><br/>-->
+                    <br/>
+                    <input type="button" value="确定" onclick="add()">
+                    <input type="button" value="取消" onclick="hide_add()">
+                </div>
+            </div>
+            <div class="users_exist">
+                <span id="users_title">已存在的用户名：</span>
+                <ul id="users">
+
+                </ul>
+            </div>
+        </div>
+        <script src="../js/lib/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../js/lib/fun_ajax.js" type="text/javascript" charset="utf-8"></script>
+        <script src="" type="text/javascript" charset="utf-8"></script>
+       	<script src="../js/userManage.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

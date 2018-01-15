@@ -1,0 +1,46 @@
+#register_div_outer{
+    margin-top: 6em;
+}
+#register_div{
+    margin: 0 auto;
+    width: 310px;
+    height: 300px;;
+}
+#register_div input{
+    margin-top: 1.5em;
+    width: 100%;
+    padding: 0.8em;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    /*-webkit-appearance: none;*/
+}
+/*验证码模块*/
+#inputCode{
+    width: 35%!important;
+}
+#checkCode{
+    width: 35%;
+    line-height: 38px;
+    text-align: center;
+    display: inline-block;
+   background-color: skyblue;
+    font-size: 14px!important;
+}
+#checkCode:hover{
+    cursor:pointer;
+}
+#wrongCode{
+    color: red;
+    font-size: 14px!important;
+}
+/**************/
+#register_login{
+    background: none;
+}
+#register_login:hover{
+    border: 1px solid blue;
+}
+#register_div span{
+    font-size: 1.2em;
+}

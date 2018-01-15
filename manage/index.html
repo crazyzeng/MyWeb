@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/manage.css">
+    <!--尝试改用require是否能解决此问题-->
+    <script src="js/lib/jquery-1.11.0.js"></script>
+    <script src="js/lib/jquery.cookies.js"></script>
+    <script type="text/javascript">
+    	//为了页面快速的反应，所以提前cookie的判断
+    	const cookie_name = $.cookie('username');
+        const sysadmin = $('.login_status');
+        //console.log(cookie_name);
+        console.log(cookie_name);
+        if(!cookie_name){
+            window.location.href="login.html"
+        }
+    </script>
+</head>
+<body>
+<div class="nav_top">
+    <span class="logo">管理员页面</span>
+    <span class="login_status"></span>
+</div>
+<!-- 	<h1>建议使用模板把实现文档和建构的分离</h1>
+    <h1>今天在尝试使用iframe失败</h1>
+    <h1>建议使用template和require搭配使用</h1> -->
+	
+<div class="main">
+    <div  class="nav_left">
+        <ul class="nav_left_side">
+            <li class="userManage">
+                <i></i>
+                <a href="JavaScript:void(0)" >用户管理</a>
+            </li>
+            <li class="messageManage">
+                <i></i>
+                <a href="JavaScript:void(0)" >信息管理</a>
+            </li>
+            <li class="dataEnter">
+                <i></i>
+                <a href="JavaScript:void(0)" >测试数据录入</a>
+            </li>
+            <li class="otherManage">
+                <i></i>
+                <a href="JavaScript:void(0)">其他管理</a>
+            </li>
+        </ul>
+<!--        <iframe src="" width="" height=""></iframe>
+-->    </div>
+
+    <div id="managePage">
+    	<!-- <iframe id="userManage" src="pages/userManage.html" width="100%" height="100%"></iframe> -->
+        <div id="userManage" class="managePage_childen">
+            <span class="page_title">用户管理</span>
+            <div class="add_users_outer">
+                <input type="button" value="添加用户" onclick="show_add()">
+                <input type="button" value="删除" onclick="del()">
+                <input type="button" value="密码重置" onclick="reset()"><br/>
+                <input type="checkbox" id="noRegister" onclick="noRegister()">开启禁止注册</input><br/>
+                <input type="checkbox" id="noLogin" onclick="noLogin()">开启禁止登录</input>
+                <div id="add_users">
+                    <span>帐号：</span><input id="user" type="text" name="username"><br/>
+                    <span>密码：</span><input id="pwd" type="password" name="password" autocomplete="new-password"><!--<span id="tips_1">*只有添加用户的时候密码项必填*</span>-->
+                    <!--<span>序号：</span><input id="order" type="text" name="order"/><br/>-->
+                    <br/>
+                    <input type="button" value="确定" onclick="add()">
+                    <input type="button" value="取消" onclick="hide_add()">
+                </div>
+            </div>
+            <div class="users_exist">
+                <span id="users_title">已存在的用户名：</span>
+                <ul id="users">
+
+                </ul>
+            </div>
+        </div>
+        <div id="messageManage" class="managePage_childen">
+            <span class="page_title">信息管理</span>
+        </div>
+        <div id="dataEnter" class="managePage_childen">
+            <span class="page_title">测试数据录入</span>
+        </div>
+        <div id="otherManage" class="managePage_childen">
+            <span class="page_title">其他管理</span>
+        </div>
+    </div>
+</div>
+
+
+<!--<script src="js/jquery-1.11.0.js"></script>-->
+<script src="js/lib/fun_ajax.js"></script>
+<script src="js/index.js"></script>
+<script src="js/lib/jquery.base64.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var managePageWidth = $(window).width()-181;
+
+        $("#managePage").css('width',managePageWidth);
+        //所有managePage中的第一层的div都应用相同的尺寸大小
+        $("#managePage").children('div').css('width',managePageWidth-181+20);
+        //$("#userManage").css('width',managePageWidth-181+20);
+
+
+        $(window).resize(function () {
+            var managePageWidth = $(window).width()-181;//window值有变化
+
+            $("#managePage").css('width',managePageWidth);
+//          $("#userManage").css('width',managePageWidth-181+20);
+            $("#managePage").children('div').css('width',managePageWidth-181+20);
+
+        })
+//      const cookie_name = $.cookie('username');
+//      const sysadmin = $('.login_status');
+//      console.log(cookie_name);
+//      if(!cookie_name){
+//          window.location.href="login.html"
+//      }
+    })
+
+</script>
+</body>
+</html>
